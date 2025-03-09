@@ -1,0 +1,51 @@
+.section0 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position:relative;
+    min-height: 70vh;
+
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    background-color: black;
+}
+
+.section0 .video-bg {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.section0 .video-wrapper {
+    background-color: rgba(0,0,0,.3);
+}
+
+.section0 .box{
+    background-color: #ebf1f5;
+    border: 2px solid;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: max(40vw, 500px);
+    height: max(40vh, 300px);
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+    z-index: 1;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    
+}
+
+.section0 button {
+    z-index: 1;
+}

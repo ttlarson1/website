@@ -1,0 +1,65 @@
+.section4 .containers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+
+.section4 {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section4 .how-it {
+    padding-bottom: 50px;
+}
+
+.section4 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.section4 .box {
+    max-width: 230px;
+    max-height: 600px;
+    height: 90%;
+    margin: 10px 20px;
+    position: relative;
+    color:aliceblue;
+    transition: transform 0.3s ease-in-out;
+    background-color: #236c70;
+    padding: 10px 5px 30px;
+    border-left: 3px solid #1d595c;
+    border-bottom: 3px solid #1d595c;
+    border-top: 1px solid #1d595c;
+    border-right: 1px solid #1d595c;
+}
+
+.section4 .box:hover {
+    transform: scale(1.05);
+}
+
+.section4 .containers .back {
+   position: absolute;
+   opacity: .5;
+   font-size: 150px;
+   top: 15%;
+   left: 65%;
+}
+
+.section4 .containers .box p{
+    text-align: left;
+}

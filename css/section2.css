@@ -1,0 +1,181 @@
+.section2 .title1{
+    text-align: center;
+   padding: 40px;
+   padding-bottom: 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #ebf1f5 ;
+}
+
+.section2 {
+    background-color: #ebf1f5;
+}
+
+
+.section2 .container1 {
+    display: flex;
+    justify-content: center;
+    background-color: #ebf1f5 ;
+    padding-bottom: 40px;
+}
+
+.section2 .container1 .text {
+    padding-right: 30px;
+}
+
+
+.section2 .container3 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    overflow: visible;
+    padding-bottom: 70px;
+}
+
+.section2 .container3 .background {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section2 .container3 .box {
+    background-color: #ebf1f5;
+    padding: 15px;
+   
+    margin: 20px;
+    max-width: 400px;
+    min-width: 280px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 .container3 .box p {
+    display: none; /* Hide text initially */
+    max-height: 200px; /* Limit height to avoid excessive expansion */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Add some space for scrollbar */
+    transition: max-height 0.3s ease-in-out;
+}
+
+
+
+.section2 .container3 .box.active p {
+    display: block;
+    max-height: 500px; /* Large enough to fit the text */
+}
+
+.section2 .sub1, .section2 .sub2, .section2 .sub3 {
+    min-width: 280px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    max-width: 400px;
+    padding-top: 30px;
+    font-size: 1.2em;
+}
+
+.section2 .sub1 img, .section2 .sub2 img, .section2 .sub3 img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.section2 .sub1:hover, .section2 .sub2:hover, .section2 .sub3:hover {
+    transform: scale(1.05);
+}
+
+
+.section2 p {
+    text-align: left;
+}
+
+.section2 .services-offered {
+    padding: 70px;
+    text-align: center;
+    background-color: #8096ab;
+    padding-bottom: 80px;
+}
+
+.section2 .services-offered .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.section2 .services-offered .service-item {
+    position: relative;
+    margin: 10px;
+}
+
+.section2 .services-offered img {
+    width: 25%;
+    height: 18%;
+    object-fit: cover;
+    min-height: 220px;
+    min-width: 260px;
+    max-height: 25px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section2 .services-offered p {
+    text-align: center;
+    padding: 40px;
+}
+
+.section2 .services-offered img:hover {
+    transform: scale(1.05);
+}
+
+.section2 .text1, .text2, .text3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden; /* Initially hidden */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #000; /* Black background for the info box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    width: 80%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.section2 .text1 {
+    top: -80px; /* Text above the image */
+}
+
+.section2 .text2 {
+    top: -80px; /* Text above the image */
+}
+
+.section2 .text3 {
+    top: -80px; /* Text above the image */
+}
+
+.service-item:hover .text1,
+.service-item:hover .text2,
+.service-item:hover .text3 {
+    visibility: visible;
+}
+
+.section2 .info{
+    position: relative;
+    top: -30px;
+    font-size: large;
+}

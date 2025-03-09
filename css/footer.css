@@ -1,0 +1,15 @@
+.footer {
+    background-color: #8fcdb4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .box {
+    max-width: 200px;
+    margin: 20px;
+}
+
+.footer .box3 p{
+    font-size: .7em;
+}
