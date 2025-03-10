@@ -13,3 +13,10 @@
 .footer .box3 p{
     font-size: .7em;
 }
+
+.footer .box4 p {
+    word-wrap: break-word;   /* Break long words onto the next line */
+    overflow-wrap: break-word; /* Alternative for better compatibility */
+    white-space: normal;     /* Allow text to wrap */
+    max-width: 100%;         /* Ensure it does not exceed the container */
+}

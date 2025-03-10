@@ -13,11 +13,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  
 }
 
 .section6 .box {
     width: 35%;
-    min-width: 500px;
+    min-width: 400px;
     margin: 10px 30px;
     background-color: white;
     padding: 30px;
