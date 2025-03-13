@@ -140,20 +140,22 @@
     transform: scale(1.05);
 }
 
-.section2 .text1, .text2, .text3 {
+.section2 .text1, .section2 .text2, .section2 .text3 {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+
     visibility: hidden; /* Initially hidden */
     color: #fff;
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
-    background-color: #000; /* Black background for the info box */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background for the info box */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-    width: 80%; /* Adjust width as needed */
-    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    width: 130%; /* Adjust width as needed */
+    z-index: 5;
+    text-align: left;
+    overflow-y: auto;
+    max-height: 600px;
 }
 
 .section2 .text1 {
@@ -168,9 +170,9 @@
     top: -80px; /* Text above the image */
 }
 
-.service-item:hover .text1,
-.service-item:hover .text2,
-.service-item:hover .text3 {
+.section2 .service-item:hover .text1,
+.section2 .service-item:hover .text2,
+.section2 .service-item:hover .text3 {
     visibility: visible;
 }
 
@@ -178,4 +180,12 @@
     position: relative;
     top: -30px;
     font-size: large;
+}
+
+.section2 .text1 ol {
+   padding-left: 20px;
+}
+
+.section2 .services-offered .text1 p {
+    text-align: left; /* Override center alignment */
 }
