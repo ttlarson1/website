@@ -16,7 +16,7 @@ button {
     /*font-family: cursive; */
     font-size: 16px; /* Adjust font size */
     font-weight: bold; /* Make text bold */
-    padding: 15px 30px; /* Add padding for shape */
+    padding: 10px 20px; /* Add padding for shape */
     border-radius: 60px; /* Make it fully rounded */
     display: inline-block; /* Ensure proper button sizing */
     text-align: center; /* Center the text */
@@ -27,7 +27,7 @@ button {
     border: 3px solid #479288;
     border-top: none;
     border-right: none;
-    font-family: 'Lato', cursive;
+    font-family: 'Space Mono', cursive;
 }
 
 button:hover {
