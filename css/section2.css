@@ -9,18 +9,20 @@
    font-size: 1.2em;
    position: relative;
    overflow: hidden;
-   color: white;
+   color: black;
 }
 
 .section2 .title1 img {
     position: absolute;
-    top:0px;
-    left:0px;
+    top:50%;
+    left:50%;
     width: 100%;
-    object-fit: contain;
+    object-fit:contain;
+    transform: translate(-50%, -50%);
 }
 
 .section2 .title1 h2, .section2 .title1 p {
+    padding-top: 20px;
     z-index: 1;
 }
 
