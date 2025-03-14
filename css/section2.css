@@ -1,11 +1,21 @@
 .section2 .title1{
     text-align: center;
-   padding: 40px;
-   padding-bottom: 80px;
+   padding: 100px;
+   padding-bottom: 150px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   background-color: #ebf1f5 ;
+   background-color: #98b4ce ;
+   font-size: 1.2em;
+}
+.section2 .title1 p {
+    text-align: center;
+    max-width: 80%;
+    font-size: 1.2em;
+}
+.section2 .title1 h2 {
+    width: 100%;
+    min-width: 370px;
 }
 
 .section2 {
@@ -17,7 +27,9 @@
     display: flex;
     justify-content: center;
     background-color: #ebf1f5 ;
-    padding-bottom: 40px;
+    padding: 50px 40px;
+    font-size: large;
+    align-items: center;
 }
 
 .section2 .container1 .text {
@@ -33,6 +45,14 @@
     align-content: space-evenly;
     overflow: visible;
     padding-bottom: 70px;
+}
+
+.section2 .services-offered .title-services{
+    font-size: 2em;
+}
+
+.section2 .services-offered .info {
+    font-size: 1.3em;
 }
 
 .section2 .container3 .background {
@@ -144,18 +164,22 @@
     position: absolute;
 
     visibility: hidden; /* Initially hidden */
-    color: #fff;
+    color: #000000;
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.7); /* Black background for the info box */
+    background-color: rgba(255, 255, 255, 0.95); /* Black background for the info box */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
-    width: 130%; /* Adjust width as needed */
+    width: 30vw; /* Adjust width as needed */
+    min-width: 350px;
     z-index: 5;
-    text-align: left;
     overflow-y: auto;
+    overflow-x: auto;
     max-height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the div */
 }
 
 .section2 .text1 {
@@ -182,10 +206,30 @@
     font-size: large;
 }
 
-.section2 .text1 ol {
+.section2 .text ol {
    padding-left: 20px;
 }
 
-.section2 .services-offered .text1 p {
+.section2 .services-offered .text p {
     text-align: left; /* Override center alignment */
+    padding: 0;
+}
+.section2 .services-offered .text ol{
+    font-weight: 100;
+    text-align: left;
+}
+
+.section2 .services-offered .text .small{
+    font-weight: 100;
+}
+
+.section2 .services-offered .text .bold {
+    font-weight: 700;
+}
+.section2 .services-offered .text ol ul {
+    list-style-type:disc;
+    padding-left: 20px;
+}
+.section2 .services-offered .text ol ul .circle {
+    list-style-type:circle;
 }

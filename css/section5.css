@@ -10,10 +10,11 @@
 
 .section5 .hero {
     max-width: 1200px;
-    width: 90%;
+    width: 100%;
     justify-self: center;
     align-self: center;
     padding: 40px;
+    font-size: 1.2em;
 }
 
 .section5 .box {
@@ -29,6 +30,7 @@
     width: 90%;
     border-left: 5px solid #479288;
     border-bottom: 5px solid #479288;
+    font-size: 1.2em;
 }
 
 .section5 .box .info {
@@ -49,4 +51,18 @@
 
 .section5 .box .under {
     text-decoration: underline;
+}
+
+@media (max-width: 930px)  {
+    .section5 .box {
+        flex-direction: column;
+        padding: 40px 0px;
+        
+        
+    }
+    .section5 .box .info{
+        max-width: 90%;
+        margin-bottom: 30px;
+       
+    }
 }

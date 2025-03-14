@@ -37,3 +37,16 @@
      max-width: 150px;
      
 }
+
+.section6 a {
+    color: blue;
+    transition: color 0.3s ease-in-out;
+}
+
+.section6 a:active {
+    color: rgb(209, 3, 3); /* Changes to red when clicked */
+}
+
+.section6 :visited {
+    color: purple; /* Color remains changed after clicking */
+}
