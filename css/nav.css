@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 button {
     background-color: #53a99d; 
     color: white; /* Text color */
@@ -22,6 +27,7 @@ button {
     border: 3px solid #479288;
     border-top: none;
     border-right: none;
+    font-family: 'Lato', cursive;
 }
 
 button:hover {
