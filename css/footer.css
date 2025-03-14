@@ -1,23 +1,57 @@
 .footer {
-    background-color: #8fcdb4;
+    background-color: #90d3b8;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
+    padding-top: 40px;
+    font-size: 1.2em;
+    align-items: stretch;
 }
 
 .footer .box {
     max-width: 200px;
-    margin: 20px;
+    margin: 4%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; 
+    min-height: 220px;
+    flex: 1 1 230px;
+}
+.footer .box p{
+    font-size: .8em;
 }
 
-.footer .box3 p{
+.footer .box button {
+    max-width: 100%;
+    max-height: 20%;
+    font-size: .7em;
+    padding: 7px;
+}
+
+.footer .box3 p {
     font-size: .7em;
 }
 
-.footer .box4 p {
-    word-wrap: break-word;   /* Break long words onto the next line */
-    overflow-wrap: break-word; /* Alternative for better compatibility */
-    white-space: normal;     /* Allow text to wrap */
-    max-width: 100%;         /* Ensure it does not exceed the container */
+.footer .box .style {
+    font-size: 1.6em;
+    color: white; /* Makes dots white */
+    letter-spacing: 10px; /* Spaces them out evenly */
+    text-align: left; /* Ensures they are centered */
+    display: block; /* Ensures it takes full width */
+}
+
+
+@media (max-width: 1210px){
+    .footer .box {
+        max-width: 150px;
+        margin: 3%;
+    }
+}
+
+@media (max-width: 820px){
+    .footer .box {
+        max-width: 230px;
+        margin: 4%;
+    }
 }
