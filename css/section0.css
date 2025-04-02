@@ -41,15 +41,14 @@
 .section01 .box {
     background-color: rgba(123, 184, 189, 0.85);
     border: 2px solid rgba(93, 138, 141, 0.85);
-    padding: 10px 20px;
+    padding: 50px 20px;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: max(40vw, 20px);
-    height: max(50vh, 330px);
-    max-height: 300px;
+    width: max(40vw, 330px);
+    height: auto;
     text-align: center;
     position: relative;
     bottom: 60px;
@@ -63,7 +62,9 @@
     .section01 {
         height: max(70vh, 600px);
     }
-
+    .section01 .box {
+        padding: 20px 20px;
+    }
     .section01 .container {
         padding-top: 120px;
     }
