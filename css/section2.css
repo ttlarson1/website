@@ -40,13 +40,13 @@
     background-color: #f3f8f8;
 }
 .section2 .top {
-    align-self: center;
-    justify-self: center;
     padding-top: 40px;
     font-family: 'Great Vibes', cursive;
     font-size: clamp(1.5rem, 3vw, 2.3rem);
     color: #3b3b3b;
     position: relative;
+    text-align: center;
+    justify-content: center;
 }
 .section2 .top::after {
     content: "";
