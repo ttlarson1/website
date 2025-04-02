@@ -35,6 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("scroll", function() {
+    const parallaxImg = document.getElementById("parallax-image");
+    const offset = window.pageYOffset;
+    parallaxImg.style.transform = `translateY(${offset * 0.4}px)`;
+});
+
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     const video = document.querySelector(".video-bg");
