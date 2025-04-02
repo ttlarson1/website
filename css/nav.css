@@ -9,6 +9,9 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
 }
+body {
+    font-family: 'Raleway', sans-serif;
+}
 
 button {
     background-color: #53a99d; 

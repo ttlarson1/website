@@ -3,6 +3,7 @@
     justify-content: center;
     background-color: #95a3aa;
     margin: 0;
+    overflow: hidden;
 }
 
 .section3 .container{
@@ -10,6 +11,7 @@
     overflow: hidden;
     height: 600px;
     justify-content: right;
+    height: max(75vh, 700px);
 }
 
 .section3 .image {
@@ -39,4 +41,20 @@
     padding: 10px 10px;
     border-radius: 10px;
     font-size: 1.1em;
+    max-height: 100%;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+}
+.section3 .content h3{
+    padding-bottom: 7px;
+}
+
+@media (max-width: 600px) {
+    .section3 .content{
+        margin: 0px;
+        border-right: 2px solid rgba(0, 0, 0, .6);
+        border-top: 2px solid rgba(0, 0, 0, .6);
+    }
+    .section3 .container{ 
+        justify-content: center;
+    }
 }

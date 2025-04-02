@@ -1,61 +1,8 @@
-.section0 {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position:relative;
-    min-height: 70vh;
-
-    flex-direction: column;
-    padding-top: 200px;
-    padding-bottom: 150px;
-    background-color: black;
-}
-
-.section0 .video-bg {
-    position: absolute;
-    z-index: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.section0 .video-wrapper {
-    background-color: rgba(0,0,0,.3);
-}
-
-.section0 .box{
-    background-color: #ebf1f5;
-    border: 2px solid;
-    padding: 10px 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    width: max(40vw, 450px);
-    height: max(50vh, 230px);
-    max-height: 300px;
-    text-align: center;
-    position: relative;
-    bottom: 60px;
-    z-index: 1;
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5em;
-    
-}
-
-.section0 a {
-    z-index: 1;
-}
-
 
 .section01 {
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    height: max(100vh, 600px);
     width: 100%;
 }
 
@@ -88,11 +35,12 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.15);
+    padding-top: 120px;
 }
 
 .section01 .box {
     background-color: rgba(123, 184, 189, 0.85);
-    border: 3px solid rgba(93, 138, 141, 0.85);
+    border: 2px solid rgba(93, 138, 141, 0.85);
     padding: 10px 20px;
     align-items: center;
     justify-content: center;
@@ -100,7 +48,7 @@
     flex-direction: column;
     gap: 50px;
     width: max(45vw, 450px);
-    height: max(50vh, 230px);
+    height: max(50vh, 330px);
     max-height: 300px;
     text-align: center;
     position: relative;
@@ -109,4 +57,14 @@
     font-family: 'Dancing Script', cursive;
     font-size: 1.5em;
     color:white;
+}
+
+@media (max-width: 700px) {
+    .section01 {
+        height: max(70vh, 600px);
+    }
+
+    .section01 .container {
+        padding-top: 120px;
+    }
 }
