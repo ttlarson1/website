@@ -100,7 +100,7 @@ button:hover {
     color: black;
 }
 
-/* 🔽 Mobile Navigation: Initially Hidden 🔽 */
+/*  Mobile Navigation: Initially Hidden  */
 #nav-toggle {
     display: none; /* Hide button by default */
     pointer-events: none; /* Disable button clicks */

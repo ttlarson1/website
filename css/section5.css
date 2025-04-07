@@ -17,6 +17,11 @@
     font-size: 1.2em;
 }
 
+.section5 .hero h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(2rem, 5vw, 2.7rem);
+}
+
 .section5 .box {
     background-color: #454c59;
     text-align: left;
@@ -64,5 +69,9 @@
         max-width: 90%;
         margin-bottom: 30px;
        
+    }
+    .section5 .hero h3 {
+        font-family: 'Raleway', sans-serif;
+        font-size: clamp(1.3rem, 5vw, 1.7rem);
     }
 }
