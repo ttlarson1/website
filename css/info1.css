@@ -85,6 +85,14 @@
     line-height: 1.6;
 }
 
+.info1 .paragraph {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #34495e;
+    font-size: 1.1rem;
+}
+
+
 @media (max-width: 768px) {
     .info1 .info-item {
         flex-direction: column;
