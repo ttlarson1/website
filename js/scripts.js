@@ -46,30 +46,30 @@ document.querySelectorAll('.nav-link[data-target]').forEach(link => {
         const targetId = this.getAttribute('data-target');
         const currentPath = window.location.pathname;
 
-        // If already on homepage, intercept and scroll
-        if (currentPath === '/' || currentPath === '/index.html') {
+        if (currentPath === '/') {
+            // Already on homepage – scroll directly
             e.preventDefault();
-            const targetEl = document.getElementById(targetId);
-            if (targetEl) {
-                targetEl.scrollIntoView({ behavior: 'smooth' });
+            const el = document.getElementById(targetId);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
             }
         } else {
-            // Navigate to homepage and pass target in URL
-            this.href = `/?target=${targetId}`;
-            // No preventDefault — allow link to go to /
+            // Not on homepage – store target and go home
+            sessionStorage.setItem('scrollTarget', targetId);
+            this.setAttribute('href', '/'); // Let it navigate to homepage
         }
     });
 });
 
-// Handle scrolling after arriving at homepage with ?target=
+// Scroll to saved section after page load (then forget it)
 window.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const sectionId = params.get('target');
-    if (sectionId) {
-        const el = document.getElementById(sectionId);
+    const targetId = sessionStorage.getItem('scrollTarget');
+    if (targetId) {
+        const el = document.getElementById(targetId);
         if (el) {
             el.scrollIntoView({ behavior: 'smooth' });
         }
+        sessionStorage.removeItem('scrollTarget');
     }
 });
 
