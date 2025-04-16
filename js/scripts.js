@@ -61,17 +61,7 @@ document.querySelectorAll('.nav-link[data-target]').forEach(link => {
     });
 });
 
-// Scroll to saved section after page load (then forget it)
-window.addEventListener('DOMContentLoaded', () => {
-    const targetId = sessionStorage.getItem('scrollTarget');
-    if (targetId) {
-        const el = document.getElementById(targetId);
-        if (el) {
-            el.scrollIntoView({ behavior: 'smooth' });
-        }
-        sessionStorage.removeItem('scrollTarget');
-    }
-});
+
 
 
 document.querySelectorAll('.services-link[data-target]').forEach(link => {

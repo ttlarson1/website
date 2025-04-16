@@ -148,9 +148,6 @@ button:hover {
         opacity: 1;
     }
 
-    /* Hide menu when not active */
-    #nav-toggle:checked ~ .nav-menu {
-        display: flex;
-    }
+ 
 }
 
