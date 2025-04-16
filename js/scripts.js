@@ -74,3 +74,22 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.querySelectorAll('.services-link[data-target]').forEach(link => {
+    link.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('data-target');
+        const currentPath = window.location.pathname;
+
+        if (currentPath === '/') {
+            // Already on homepage – scroll directly
+            e.preventDefault();
+            const el = document.getElementById(targetId);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            // Not on homepage – store target and go home
+            sessionStorage.setItem('scrollTarget', targetId);
+            this.setAttribute('href', '/services/'); // Let it navigate to homepage
+        }
+    });
+});
