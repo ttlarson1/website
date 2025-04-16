@@ -28,7 +28,7 @@
             <!--make changes to font on the bottom ones and change the services offered, make blog-->
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand nav-link" data-target="section01" href="/">
                         <img src="images/logo.png" alt="Logo">
                     </a>
             
@@ -38,16 +38,16 @@
 
                     <div class="nav-menu">
                         <ul class="nav-list">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li> -->
-                            <li class="nav-item"><a class="nav-link" href="index.html#about1">About Me</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#resources">Resources</a></li>
-                            <li class="nav-item"><a class="nav-link" href="index.html#price">Appointments</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://EBW.intakeq.com/booking" target="_blank" alt="Make an Online Appointment">
-                                <button class="scheduleToday" id="scheduleToday">
-                                    Book Now
-                                </button> 
-                            </a></li>
+                            <li class="nav-item"><a class="nav-link" data-target="section01" href="/">Home</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" data-target="blog" href="/">Blog</a></li> -->
+                            <li class="nav-item"><a class="nav-link" data-target="about2" href="/">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" data-target="resources" href="/">Resources</a></li>
+                            <li class="nav-item"><a class="nav-link" data-target="price" href="/">Appointments</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://EBW.intakeq.com/booking" target="_blank" aria-label="Make an Online Appointment">
+                                    <button class="scheduleToday" id="scheduleToday">Book Now</button> 
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -216,11 +216,11 @@
         </div>
         <div class="box box2">
             <h4>Quick Links</h4> <P class="style"> . . .</P><br>
-            <p> <a href="index.html#section1">Integrative Psychiatry</a> <br><br>
-                <a href="index.html#how-it">How It Works</a> <br> <br>
-                <a href="index.html#price">Pricing</a> <br><br>
-                <a href="index.html#resources">Resources</a> <br><br>
-                <a href="index.html#about1">About</a></p>
+            <p> <a class="nav-link" data-target="home" href="/">Integrative Psychiatry</a> <br><br>
+                <a class="nav-link" data-target="how-it" href="/">How It Works</a> <br> <br>
+                <a class="nav-link" data-target="price" href="/">Pricing</a> <br><br>
+                <a class="nav-link" data-target="resources" href="/">Resources</a> <br><br>
+                <a class="nav-link" data-target="about1" href="/"">About</a></p>
         </div>
         <div class="box box3">
             <h4>Contact</h4> 
