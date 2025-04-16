@@ -41,5 +41,15 @@ document.addEventListener("scroll", function() {
     parallaxImg.style.transform = `translateY(${offset * 0.4}px)`;
 });
 
+document.querySelectorAll('.nav-link[data-target]').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault(); // Stop the browser from jumping or reloading
+        const targetId = this.getAttribute('data-target');
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
 
 
