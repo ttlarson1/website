@@ -43,13 +43,34 @@ document.addEventListener("scroll", function() {
 
 document.querySelectorAll('.nav-link[data-target]').forEach(link => {
     link.addEventListener('click', function (e) {
-        e.preventDefault(); // Stop the browser from jumping or reloading
         const targetId = this.getAttribute('data-target');
-        const targetEl = document.getElementById(targetId);
-        if (targetEl) {
-            targetEl.scrollIntoView({ behavior: 'smooth' });
+        const currentPath = window.location.pathname;
+
+        // If already on homepage, intercept and scroll
+        if (currentPath === '/' || currentPath === '/index.html') {
+            e.preventDefault();
+            const targetEl = document.getElementById(targetId);
+            if (targetEl) {
+                targetEl.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            // Navigate to homepage and pass target in URL
+            this.href = `/?target=${targetId}`;
+            // No preventDefault — allow link to go to /
         }
     });
+});
+
+// Handle scrolling after arriving at homepage with ?target=
+window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const sectionId = params.get('target');
+    if (sectionId) {
+        const el = document.getElementById(sectionId);
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 });
 
 
