@@ -89,6 +89,8 @@ button:hover {
 .nav-list {
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-item {
@@ -113,7 +115,7 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .nav-menu {
         display: none;  /* Hide menu by default */
         flex-direction: column;
