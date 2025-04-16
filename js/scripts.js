@@ -79,7 +79,7 @@ document.querySelectorAll('.services-link[data-target]').forEach(link => {
         const targetId = this.getAttribute('data-target');
         const currentPath = window.location.pathname;
 
-        if (currentPath === '/') {
+        if (currentPath === '/services/') {
             // Already on homepage – scroll directly
             e.preventDefault();
             const el = document.getElementById(targetId);
