@@ -57,10 +57,13 @@
 }
 
 .footer .box2 a{
-    color: blue;
+    color: rgb(39, 39, 255);
     transition: color 0.3s ease-in-out;
 }
 
+.footer .box2 a {
+    text-decoration: none;
+}
 .footer .box2 a:active{
     color: rgb(209, 3, 3); /* Changes to red when clicked */
 }
