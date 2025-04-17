@@ -56,6 +56,19 @@
     transform: translateX(-6px);
 }
 
+.footer .box2 a{
+    color: blue;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .box2 a:active{
+    color: rgb(209, 3, 3); /* Changes to red when clicked */
+}
+
+.footer .box2 a :visited {
+    color: purple; /* Color remains changed after clicking */
+}
+
 @media (max-width: 1210px){
     .footer .box {
         max-width: 150px;
