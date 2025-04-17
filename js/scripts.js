@@ -2,12 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Nav toggle
     const toggleButton = document.getElementById("nav-toggle");
     const navMenu = document.querySelector(".nav-menu");
+    
 
     if (toggleButton && navMenu) {
         toggleButton.addEventListener("click", function () {
-            navMenu.classList.toggle("active");
+            navMenu.classList.toggle("actives");
+            console.log("Menu toggled! Active?", navMenu.classList.contains("actives"));
         });
     }
+    
 
     // Box toggle
     const boxes = document.querySelectorAll(".container3 .box");

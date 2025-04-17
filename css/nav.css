@@ -114,6 +114,7 @@ button:hover {
     cursor: pointer;
 }
 
+
 /* Responsive Design */
 @media (max-width: 800px) {
     .nav-menu {
@@ -127,7 +128,7 @@ button:hover {
         padding: 10px 0;
     }
 
-    .nav-menu.active {
+    .nav-menu.actives {
         display: flex; /* Show menu when active */
     }
 
