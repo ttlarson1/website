@@ -12,29 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
 
-    // Box toggle
-    const boxes = document.querySelectorAll(".container3 .box");
 
-    boxes.forEach(box => {
-        box.addEventListener("click", function () {
-            const isActive = this.classList.contains("active");
-
-            boxes.forEach(b => {
-                b.classList.remove("active");
-                b.querySelector("p").style.display = "none";
-                b.style.opacity = "1";
-            });
-
-            if (!isActive) {
-                this.classList.add("active");
-                this.querySelector("p").style.display = "block";
-
-                boxes.forEach(b => {
-                    if (b !== this) b.style.opacity = "0.5";
-                });
-            }
-        });
-    });
 
     // Nav scroll links on homepage
     document.querySelectorAll('.nav-link[data-target]').forEach(link => {
