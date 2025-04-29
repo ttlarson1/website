@@ -9,10 +9,11 @@
 
 .info1 .info-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
+    background-color: #f5f5f5;
 }
 
 .info1 .info-item.reverse .box{
@@ -20,12 +21,17 @@
     background-color: #e0e0e0;    
 }
 
+.info1 .info-item.reverse {
+    justify-content: center;
+    background-color: #e0e0e0;  
+}
+
 .info1 .box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5; /* Light gray shade */
-    padding: 30px;
+    background-color: #f5f5f5; 
+    padding: 30px 10px;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -33,7 +39,7 @@
 
 
 .info1 .box img {
-    width: max(40%,400px);
+    width: max(27%,400px);
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -46,7 +52,15 @@
     flex-direction: column;
     gap: 15px;
     align-items: flex-start;
-    width: 40%; /* Limit text box width */
+    width: 45%; /* Limit text box width */
+}
+.info1 .below-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1400px; /* Limit text box width */
 }
 
 .info1 h2 {
@@ -67,7 +81,7 @@
     margin-left: 20px; /* Adjust margin on reversed layout */
 }
 
-.info1 ol {
+.info1 ol, .info1 ul {
     list-style-position: inside;
     padding-left: 20px;
     margin-top: 10px;
@@ -76,13 +90,15 @@
 .info1 ol li {
     margin-bottom: 12px;
     font-size: 1rem;
-    color: #34495e;
+    color: #102131;
 }
 
-.info1 small {
-    font-size: 0.95rem;
-    color: #7f8c8d;
-    line-height: 1.6;
+.info1 ul {
+    list-style-type: disc;
+}
+
+.info1 ul ul {
+    list-style-type: circle;
 }
 
 .info1 .paragraph {
@@ -93,7 +109,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
     .info1 .info-item {
         flex-direction: column;
         text-align: center;
@@ -129,6 +145,16 @@
     
     }
 
+    .info1 .below-text {
+        width: 100%;
+    }
+
+    .info1 ol {
+        max-width: 650px;  /* Or whatever width fits your design */
+        margin: 0 auto;     /* Center the ol block itself */
+        text-align: left;   /* Keep text aligned to the left within the centered block */
+        padding: 0 20px;    /* Optional: prevent edge hugging */
+      }
     .info1 ol li {
         font-size: 0.95rem;
     }
