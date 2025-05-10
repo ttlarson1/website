@@ -39,8 +39,8 @@
 }
 
 .section01 .box {
-    background-color: rgba(123, 184, 189, 0.85);
-    border: 2px solid rgba(93, 138, 141, 0.85);
+    background-color: #89a6b9D9;
+    border: 2px solid #748d9ed9;
     padding: 50px 20px;
     align-items: center;
     justify-content: center;
@@ -53,9 +53,13 @@
     position: relative;
     bottom: 60px;
     z-index: 1;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: 1.5em;
     color:white;
+}
+
+.section01 .box h3{
+    font-family: 'Raleway', cursive;
 }
 
 @media (max-width: 700px) {
