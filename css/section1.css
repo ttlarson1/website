@@ -20,6 +20,11 @@
     
 }
 
+.section11 .title a {
+    text-decoration: none;
+    color:rgba(34, 34, 34, 0.87);
+}
+
 .section11 h1,
 .section11 h3,
 .section11 p {

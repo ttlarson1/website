@@ -9,9 +9,9 @@
 .section3 .container{
     position: relative;
     overflow: hidden;
-    height: 600px;
+    max-height: 1100px;
     justify-content: right;
-    height: max(75vh, 700px);
+    height: max(75vh, 950px);
 }
 
 .section3 .image {
@@ -36,7 +36,7 @@
     background-color: white;
     border-left: 2px solid rgba(0, 0, 0, .6);
     border-bottom: 2px solid rgba(0, 0, 0, .6);
-    max-width: 430px;
+    max-width: 530px;
     margin-right: 30px;
     padding: 10px 10px;
     border-radius: 10px;
@@ -48,11 +48,16 @@
     padding-bottom: 7px;
 }
 
+.section3 .content p{
+    text-align: left;
+}
+
 @media (max-width: 600px) {
     .section3 .content{
         margin: 0px;
         border-right: 2px solid rgba(0, 0, 0, .6);
         border-top: 2px solid rgba(0, 0, 0, .6);
+        max-width: 430px;
     }
     .section3 .container{ 
         justify-content: center;
