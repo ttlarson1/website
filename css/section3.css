@@ -6,60 +6,104 @@
     overflow: hidden;
 }
 
-.section3 .container{
+.section3 .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     position: relative;
-    overflow: hidden;
     max-height: 1100px;
-    justify-content: right;
     height: max(75vh, 950px);
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .section3 .image {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    top:0px;
-    left: 0px;
     max-width: 700px;
+    z-index: 0;
 }
 
 .section3 .image img {
     width: 100%;
     height: 100%;
-    
-    object-fit: cover; /* Ensures the image fills while maintaining aspect ratio */
+    object-fit: cover;
 }
 
 .section3 .content {
     z-index: 1;
-    text-align: center;
     background-color: white;
-    border-left: 2px solid rgba(0, 0, 0, .6);
-    border-bottom: 2px solid rgba(0, 0, 0, .6);
+    border-left: 2px solid rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.6);
     max-width: 530px;
-    margin-right: 30px;
-    padding: 10px 10px;
+    width: 100%;
+    padding: 15px;
+    margin-left: auto;
     border-radius: 10px;
-    font-size: 1.1em;
-    max-height: 100%;
     font-size: clamp(1rem, 2vw, 1.1rem);
-}
-.section3 .content h3{
-    padding-bottom: 7px;
+    box-sizing: border-box;
 }
 
-.section3 .content p{
+.section3 .content h3 {
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+.section3 .content p {
     text-align: left;
 }
 
+.section3 .content a {
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    
+}
+
 @media (max-width: 600px) {
-    .section3 .content{
-        margin: 0px;
-        border-right: 2px solid rgba(0, 0, 0, .6);
-        border-top: 2px solid rgba(0, 0, 0, .6);
-        max-width: 430px;
+    .section3 .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
     }
-    .section3 .container{ 
-        justify-content: center;
+
+    .section3 .image {
+        position: static;
+        width: 100%;
+        height: 200px;
+        max-width: none;
+    }
+
+    .section3 .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section3 .content {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        border: none;
+        border-top: 2px solid rgba(0, 0, 0, 0.6);
+        border-right: 2px solid rgba(0, 0, 0, 0.6);
+    }
+}
+
+@media (max-width: 360px) {
+    .section3 .content {
+        padding: 10px 8px;
+        font-size: 0.95rem;
+    }
+
+    .section3 .image {
+        height: 150px;
     }
 }

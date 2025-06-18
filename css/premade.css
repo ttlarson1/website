@@ -1,0 +1,32 @@
+.premade {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #36485c;
+}
+
+.premade a {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.premade img {
+    width: 100%;
+    max-height: 800px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    object-fit: fill;
+    transform-origin: center;
+    transform: scale(1.1);
+}
+
+.premade .imgwrapper {
+    max-width: 800px;
+    max-height: 800px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}

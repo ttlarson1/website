@@ -40,6 +40,7 @@
 
 .section5 .box .info {
     max-width: 70%;
+    word-wrap: break-word;
 }
 
 .section5 .box button {

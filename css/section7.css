@@ -84,4 +84,8 @@
     .section7 .last-part .text {
         text-align: center;
     }
+
+    .section7 .box1 img{
+        overflow: hidden;
+    }
 }
