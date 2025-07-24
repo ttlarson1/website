@@ -1,0 +1,46 @@
+.insurance-section {
+  padding: 40px 20px;
+  background-color: rgb(248, 252, 247);
+  text-align: center;
+}
+
+.insurance-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* LOGO GRID */
+.insurance-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.insurance-logos img {
+  max-width: 240px;      
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(15%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.insurance-logos img:hover {
+  transform: scale(1.05);
+}
+
+/* TEXT LIST */
+.insurance-names {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px 30px;
+  font-size: 0.85rem;
+  color: #555;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
