@@ -15,12 +15,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  
+    
 }
 
 .section6 .box {
     width: 35%;
-    min-width: 400px;
+    min-width: 330px;
     margin: 10px 30px;
     background-color: white;
     padding: 30px;
@@ -28,8 +28,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
 }
 
 .section6 .box img {
