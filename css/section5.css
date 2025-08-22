@@ -14,12 +14,12 @@
     justify-self: center;
     align-self: center;
     padding: 40px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .section5 .hero h3 {
     font-family: 'Great Vibes', cursive;
-    font-size: clamp(2rem, 5vw, 2.7rem);
+    font-size: clamp(4rem, 5vw, 4.5rem);
 }
 
 .section5 .box {
@@ -73,6 +73,6 @@
     }
     .section5 .hero h3 {
         font-family: 'Raleway', sans-serif;
-        font-size: clamp(1.3rem, 5vw, 1.7rem);
+        font-size: clamp(2rem, 5vw, 3rem);
     }
 }

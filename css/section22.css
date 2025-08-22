@@ -1,6 +1,6 @@
 
 .section22 {
-    background-color: #8096ab;
+    background-color: #89a6b9;
     overflow: hidden;
 }
 
@@ -21,14 +21,14 @@
     left: 50%;
     transform: translateX(-50%);
     width: 80px;
-    border-bottom: 2px solid #a3b18a;
+    border-bottom: 2px solid #5e684f;
 }
 
 
 .section22 .container1 {
     display: flex;
     justify-content: center;
-    background-color: #8096ab ;
+    background-color: #89a6b9 ;
     padding: 50px 40px;
     font-size: large;
     align-items: center;
@@ -66,6 +66,14 @@
     display: block; /* make <a> behave like block element */
     text-decoration: none;
     
+}
+
+.section22 .container2 button {
+    background-color: #5a6374;
+}
+
+.section22 .container2 button:hover {
+    background-color: #454c59;
 }
 
 .section22 .container3 .box img {

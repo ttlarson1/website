@@ -63,7 +63,7 @@
     text-align: center;
     display: flex;
     justify-self: center;
-    
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
