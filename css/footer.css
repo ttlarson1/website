@@ -68,7 +68,7 @@
     color: rgb(209, 3, 3); /* Changes to red when clicked */
 }
 
-.footer .box2 a :visited {
+.footer .box2 a:visited {
     color: purple; /* Color remains changed after clicking */
 }
 
@@ -78,6 +78,24 @@
 .footer .box1 {
     max-width: 220px;
 }
+
+.footer #footerColor a {
+    color: rgb(26, 26, 26);
+    font-size: .9em;
+}
+.footer #footerColor a:visited {
+    color: rgb(75, 5, 75); /* Color remains changed after clicking */
+}
+
+.footer .box #started {
+    background-color: #5a6374;
+    border-color:#4c5361;
+}
+
+.footer .box #started:hover {
+    background-color: #454c59;
+}
+
 
 @media (max-width: 1210px){
     .footer .box {
