@@ -59,6 +59,10 @@
     text-decoration: underline;
 }
 
+.section5 .update{
+    max-width: 70%;
+    color: #202329;
+}
 @media (max-width: 930px)  {
     .section5 .box {
         flex-direction: column;
@@ -74,5 +78,8 @@
     .section5 .hero h3 {
         font-family: 'Raleway', sans-serif;
         font-size: clamp(2rem, 5vw, 3rem);
+    }
+    .section5 .update{
+        max-width: 90%;
     }
 }
