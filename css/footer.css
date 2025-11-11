@@ -110,3 +110,12 @@
         margin: 4%;
     }
 }
+
+@media (max-width: 562px){
+    .footer .box {
+        max-width: 230px;
+        margin: 4%;
+        text-align: center;
+        justify-items: center;
+    }
+}
