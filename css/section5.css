@@ -63,6 +63,26 @@
     max-width: 70%;
     color: #202329;
 }
+
+.section5 .update h1 {
+    font-size: 28px;
+    color: rgb(20, 20, 20);
+    
+}
+.section5 .updates {
+    position: relative;
+    width: fit-content;
+    margin: 0px auto;
+}
+
+.section5 .updates::after {
+    content: "";
+    display: block;
+    width: 80px;
+    margin: 20px auto 0;
+    border-bottom: 2px solid #5e684f;
+}
+
 @media (max-width: 930px)  {
     .section5 .box {
         flex-direction: column;
